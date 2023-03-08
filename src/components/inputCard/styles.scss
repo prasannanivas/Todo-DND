@@ -1,0 +1,61 @@
+.input-card{
+    background-color: rgb(250, 250, 250);
+    padding: 1rem;
+    border-radius: 5px;
+    justify-content: space-between;
+
+    .input-card-container{
+        width:100%;
+        margin:auto;
+
+
+        .input-text{
+            width:100%;
+            height: 3rem;
+            resize: none;
+            padding: 0.5rem;
+            font-size: 15px;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+
+    .confirm{
+        width: 268px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .button-confirm{
+            height:2rem;
+            width: 6rem;
+            background-color: blueviolet;
+            cursor: pointer;
+            border: none;
+            border-radius: 7px;
+            color: aliceblue;
+            font-weight: bold;
+
+            &:hover{
+                background-color: rgb(255, 255, 255);
+                color: blueviolet;
+            }
+        }  
+    }
+
+    .button-cancel{
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+
+        svg{
+            transition: color 0.3s;
+            &:hover{
+                background-color: blueviolet;
+                color: aliceblue;
+            }
+        }
+
+    }
+}
+
+
+
