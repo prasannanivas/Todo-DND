@@ -29,3 +29,19 @@ for draggable we pass ref={provided.innerRef}
         </Draggable List3>
     </Droppable>
 </DragDropContext>
+
+
+
+Every Logic has to go in onDragEnd
+
+It will pass result as an argument
+
+the result will have 
+    1) source -> {index, droppableID}
+    2) destination -> {index, droppableID} 
+    3) DraggableID
+    4) Type and anyother props passed for Droppable.
+
+with the help of this, we must frame our logic.
+
+The DIV referencing provided.innerRef must end with {provided.placeholder} so that the droppable area just stops there.
