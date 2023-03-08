@@ -105,6 +105,7 @@ const Home = () => {
 
   const onDragEnd = async(result) => {
     const {destination, source, draggableId, type} = result;
+    console.log(destination, source, draggableId, type, result.droppableId , result);
     if(!destination){
         return;
     }

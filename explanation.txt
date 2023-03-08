@@ -1,0 +1,31 @@
+<DragDropContext> -> where we can drag and drop
+
+<Droppable> -> area where we can drop 
+
+<Draggable> -> Individual components which can be dragged.
+
+
+for droppable we pass (provided) and the div must refer to {provided.innerRef}
+for draggable we pass ref={provided.innerRef}
+                    {...provided.dragHandleProps}
+                    {...provided.draggableProps}
+
+
+<DragDropContext>
+    <Droppable "app">
+        <Draggable List1>
+            <Droppable "List1">
+                <Draggable Card1>
+                </Draggable Card1>
+            <Droppable "List1">
+        </Draggable List1>
+        <Draggable List2>
+            <Droppable "List2">
+            <Droppable "List2">
+        </Draggable List2>
+        <Draggable List3>
+            <Droppable "List3">
+            <Droppable "List3">
+        </Draggable List3>
+    </Droppable>
+</DragDropContext>

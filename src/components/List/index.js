@@ -13,7 +13,7 @@ const List = ({ list, index }) => {
             {
                 (provided) => (
                     <div {...provided.draggableProps} ref={provided.innerRef} {...provided.dragHandleProps}>
-                        <div className='list-cards' {...provided.dragHandleProps} >
+                        <div className='list-cards' >
                             <div className='title-list'>
                                 <Title title={list.title} listId={list.id}/>
                             </div>
